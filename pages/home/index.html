@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AMNIKON — Powering business growth through smarter IT. Managed IT, Cloud, Cybersecurity, and Advisory services for modern businesses.">
+  <title>AMNIKON — Smarter IT for Modern Business</title>
+
+  <!-- Global Design System -->
+  <link rel="stylesheet" href="../../assets/css/global.css">
+  <link rel="stylesheet" href="../../assets/css/navbar.css">
+  <link rel="stylesheet" href="../../assets/css/footer.css">
+  <link rel="stylesheet" href="../../assets/css/chatbot.css">
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR (injected) ── -->
+  <div id="navbar-placeholder"></div>
+  <script src="../../components/navbar.js"></script>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 1 — HERO (Video Background)
+  ══════════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <!-- Background video -->
+    <video class="hero-video" autoplay muted playsinline loop>
+      <source src="../../assets/videos/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Trusted IT Partner</div>
+        <h1>
+          Powering Business Growth<br>
+          Through <span class="highlight">Smarter IT</span>
+        </h1>
+        <p>
+          For over a decade, AMNIKON has helped ambitious companies transform their
+          IT into a performance advantage. We design scalable, secure infrastructure
+          that accelerates growth and keeps your operations ahead of the competition.
+        </p>
+        <div class="hero-actions">
+          <a href="../contact/contact.html" class="btn btn-primary">Get in Touch</a>
+          <button class="btn btn-video" id="openVideo">
+            <span class="play-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14">
+                <polygon points="6,3 20,12 6,21"/>
+              </svg>
+            </span>
+            Watch Our Story
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Modal -->
+  <div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Company video">
+    <div class="video-modal-inner">
+      <button class="modal-close" aria-label="Close video">&times;</button>
+      <video id="modalVideo" controls>
+        <source src="../../assets/videos/video2.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 2 — STATS / EXPERTISE
+  ══════════════════════════════════════════════ -->
+  <section class="section stats-section" id="expertise">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <div class="eyebrow">Our Expertise</div>
+        <h2><span class="highlight">30 Years</span> of Industry-Leading Expertise</h2>
+        <p>
+          We have the expertise to support you at every stage of your growth journey.
+          As a full-service IT solutions provider, we bring together top industry talent
+          with the latest certifications to deliver innovative, reliable solutions.
+        </p>
+      </div>
+
+      <div class="stats-grid reveal-stagger">
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <img src="../../assets/icons/team.png" alt="Team">
+          </div>
+          <h3 class="counter" data-target="120" data-suffix="+">0</h3>
+          <p>Team Members</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <img src="../../assets/icons/user.png" alt="Users">
+          </div>
+          <h3 class="counter" data-target="3000" data-suffix="+">0</h3>
+          <p>Supported Users</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <img src="../../assets/icons/ticket.png" alt="Tickets">
+          </div>
+          <h3 class="counter" data-target="9.6" data-decimal="true">0</h3>
+          <p>Avg. Ticket Score</p>
+        </div>
+
+      </div>
+
+      <div class="stats-cta reveal">
+        <a href="../contact/contact.html" class="btn btn-primary">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 3 — WHY SWITCH (Hover cards)
+  ══════════════════════════════════════════════ -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="why-layout">
+
+        <div class="why-left reveal-left">
+          <div class="eyebrow">Why Choose Us</div>
+          <h2>Why Companies Switch to AMNIKON</h2>
+          <p>
+            Thinking about making a switch? Here's why AMNIKON is the smarter choice
+            for businesses that depend on secure, seamless, and scalable IT.
+          </p>
+
+          <p class="why-description">
+            We help organizations modernize infrastructure, strengthen security,
+            simplify operations, and scale confidently with IT support and
+            cloud-first solutions tailored to business growth.
+  </p>
+
+          <a href="../about/company.html" class="btn btn-outline" style="margin-top:24px;">Learn More</a>
+        </div>
+
+        <div class="why-right">
+          <div class="why-cards reveal-stagger">
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>IT That Grows Your Business</h4>
+              <p>We design IT solutions that move at the speed of your business.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>Industry-Leading Partnerships</h4>
+              <p>We partner with AWS and Microsoft to deliver powerful IT solutions.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>Enterprise-Grade Security</h4>
+              <p>Our security solutions protect your systems around the clock.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>Save Money, Get Better IT</h4>
+              <p>We streamline your IT infrastructure, cutting costs while boosting performance.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>We Know Your Tools</h4>
+              <p>Whether ERP, CRM, or cloud platforms — we know the systems your team uses.</p>
+            </div>
+
+            <div class="why-card">
+              <div class="why-card-line"></div>
+              <h4>Compliance Built In</h4>
+              <p>From CMMC to SOC — your systems stay secure and compliant by design.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════
+       SECTION 4 — CLIENT LOGOS (Auto-scroll)
+  ══════════════════════════════════════════════ -->
+  <section class="section-sm clients-section" id="clients">
+    <div class="container">
+      <div class="section-header centered reveal">
+        <div class="eyebrow">Trusted By</div>
+        <h2>Businesses That Trust AMNIKON</h2>
+        <p>From growing startups to established enterprises, companies across the globe partner with AMNIKON.</p>
+      </div>
+    </div>
+
+ <div class="logo-slider reveal">
+
+  <!-- Row 1 -->
+  <div class="logo-track track-left">
+
+    <img src="../../assets/logos/client-logos/drinkpak-logo.png" alt="DrinkPAK">
+    <img src="../../assets/logos/client-logos/dtc-logo.png" alt="DTC">
+    <img src="../../assets/logos/client-logos/geometry-logo.png" alt="Geometry">
+    <img src="../../assets/logos/client-logos/ravidit-logo.png" alt="RavidIT">
+    <img src="../../assets/logos/client-logos/xoriant-logo.png" alt="Xoriant">
+
+    <!-- Duplicate -->
+    <img src="../../assets/logos/client-logos/drinkpak-logo.png" alt="DrinkPAK">
+    <img src="../../assets/logos/client-logos/dtc-logo.png" alt="DTC">
+    <img src="../../assets/logos/client-logos/geometry-logo.png" alt="Geometry">
+    <img src="../../assets/logos/client-logos/ravidit-logo.png" alt="RavidIT">
+    <img src="../../assets/logos/client-logos/xoriant-logo.png" alt="Xoriant">
+
+  </div>
+
+  <!-- Row 2 -->
+  <div class="logo-track track-right">
+
+    <img src="../../assets/logos/client-logos/ravidit-logo.png" alt="RavidIT">
+    <img src="../../assets/logos/client-logos/xoriant-logo.png" alt="Xoriant">
+    <img src="../../assets/logos/client-logos/drinkpak-logo.png" alt="DrinkPAK">
+    <img src="../../assets/logos/client-logos/dtc-logo.png" alt="DTC">
+    <img src="../../assets/logos/client-logos/geometry-logo.png" alt="Geometry">
+
+    <!-- Duplicate -->
+    <img src="../../assets/logos/client-logos/ravidit-logo.png" alt="RavidIT">
+    <img src="../../assets/logos/client-logos/xoriant-logo.png" alt="Xoriant">
+    <img src="../../assets/logos/client-logos/drinkpak-logo.png" alt="DrinkPAK">
+    <img src="../../assets/logos/client-logos/dtc-logo.png" alt="DTC">
+    <img src="../../assets/logos/client-logos/geometry-logo.png" alt="Geometry">
+
+  </div>
+
+</div>
+  </section>
+
+  <!-- ── FOOTER (injected) ── -->
+  <div id="footer-placeholder"></div>
+  <script src="../../components/footer.js"></script>
+
+  <!-- ── CHATBOT (injected) ── -->
+  <div id="chatbot-placeholder"></div>
+  <script src="../../components/chatbot.js"></script>
+
+  <!-- Scripts -->
+  <script src="../../assets/js/global.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>

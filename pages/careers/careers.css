@@ -1,0 +1,90 @@
+/* ============================================================
+   CAREERS PAGE — careers.css
+   ============================================================ */
+
+.perks-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+.perk-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.perk-card:hover {
+  border-color: rgba(37,99,235,0.3);
+  transform: translateY(-4px);
+}
+
+.perk-icon { font-size: 2.25rem; margin-bottom: var(--space-md); display: block; }
+.perk-card h4 { margin-bottom: var(--space-sm); }
+
+/* Positions */
+.positions-section { background: var(--surface); border-top: 1px solid var(--border); }
+
+.positions-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-2xl);
+}
+
+.position-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xl);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl) var(--space-xl);
+  transition: var(--transition);
+}
+
+.position-card:hover {
+  border-color: rgba(37,99,235,0.3);
+  background: var(--surface-3);
+  transform: translateX(4px);
+}
+
+.position-info h4 { margin-bottom: var(--space-sm); }
+
+.position-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.position-meta span { font-size: 0.875rem; color: var(--text-subtle); }
+
+.tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(37,99,235,0.12);
+  color: var(--accent-text);
+  border: 1px solid rgba(37,99,235,0.25);
+}
+
+.position-card .btn { flex-shrink: 0; }
+
+@media (max-width: 1024px) { .perks-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) {
+  .perks-grid { grid-template-columns: 1fr; }
+  .position-card { flex-direction: column; align-items: flex-start; }
+}
+
+/* Custom hero background for Careers page */
+.career-hero .page-hero {
+  background: var(--accent-light); /* lighter blue background for Careers hero */
+}
+

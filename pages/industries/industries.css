@@ -1,0 +1,37 @@
+/* ============================================================
+   INDUSTRIES PAGE — industries.css
+   ============================================================ */
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.industry-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(37,99,235,0.35);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.3), 0 0 20px rgba(37,99,235,0.1);
+  background: var(--surface-2);
+}
+
+.industry-icon {
+  font-size: 2rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.industry-card h3 { margin-bottom: var(--space-sm); font-size: 1.1rem; }
+.industry-card p  { font-size: 0.9rem; }
+
+@media (max-width: 1024px) { .industries-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px)  { .industries-grid { grid-template-columns: 1fr; } }
